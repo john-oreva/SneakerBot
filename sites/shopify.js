@@ -136,7 +136,7 @@ async function checkout({
           new Promise(() => {
             setTimeout(() => {
               throw new Error('The captcha was not solved in time.');
-            }, 4 * 60 * 1000);
+            }, 5 * 60 * 1000);
           }),
           new Promise((resolve) => {
             const interval = setInterval(async () => {
